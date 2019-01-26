@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7236E5521FAF4E0009A41DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236E5421FAF4E0009A41DB /* AppDelegate.swift */; };
+		B7236E5B21FAF4E0009A41DB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236E5A21FAF4E0009A41DB /* GameScene.swift */; };
+		B7236E5D21FAF4E0009A41DB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236E5C21FAF4E0009A41DB /* GameViewController.swift */; };
+		B7236E6021FAF4E0009A41DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7236E5E21FAF4E0009A41DB /* Main.storyboard */; };
+		B7236E6221FAF4E4009A41DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7236E6121FAF4E4009A41DB /* Assets.xcassets */; };
+		B7236E6521FAF4E4009A41DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7236E6321FAF4E4009A41DB /* LaunchScreen.storyboard */; };
+		B7236E6D21FAF760009A41DB /* dino.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B7236E6C21FAF760009A41DB /* dino.atlas */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7236E5121FAF4E0009A41DB /* DinoRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7236E5421FAF4E0009A41DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7236E5A21FAF4E0009A41DB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B7236E5C21FAF4E0009A41DB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B7236E5F21FAF4E0009A41DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7236E6121FAF4E4009A41DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7236E6421FAF4E4009A41DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7236E6621FAF4E4009A41DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7236E6C21FAF760009A41DB /* dino.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = dino.atlas; path = ../../../Desktop/dino.atlas; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7236E4E21FAF4E0009A41DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7236E4821FAF4E0009A41DB = {
+			isa = PBXGroup;
+			children = (
+				B7236E5321FAF4E0009A41DB /* DinoRun */,
+				B7236E5221FAF4E0009A41DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7236E5221FAF4E0009A41DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7236E5121FAF4E0009A41DB /* DinoRun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7236E5321FAF4E0009A41DB /* DinoRun */ = {
+			isa = PBXGroup;
+			children = (
+				B7236E5421FAF4E0009A41DB /* AppDelegate.swift */,
+				B7236E5A21FAF4E0009A41DB /* GameScene.swift */,
+				B7236E5C21FAF4E0009A41DB /* GameViewController.swift */,
+				B7236E5E21FAF4E0009A41DB /* Main.storyboard */,
+				B7236E6121FAF4E4009A41DB /* Assets.xcassets */,
+				B7236E6321FAF4E4009A41DB /* LaunchScreen.storyboard */,
+				B7236E6621FAF4E4009A41DB /* Info.plist */,
+				B7236E6C21FAF760009A41DB /* dino.atlas */,
+			);
+			path = DinoRun;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7236E5021FAF4E0009A41DB /* DinoRun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7236E6921FAF4E4009A41DB /* Build configuration list for PBXNativeTarget "DinoRun" */;
+			buildPhases = (
+				B7236E4D21FAF4E0009A41DB /* Sources */,
+				B7236E4E21FAF4E0009A41DB /* Frameworks */,
+				B7236E4F21FAF4E0009A41DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DinoRun;
+			productName = DinoRun;
+			productReference = B7236E5121FAF4E0009A41DB /* DinoRun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7236E4921FAF4E0009A41DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = rain;
+				TargetAttributes = {
+					B7236E5021FAF4E0009A41DB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = B7236E4C21FAF4E0009A41DB /* Build configuration list for PBXProject "DinoRun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7236E4821FAF4E0009A41DB;
+			productRefGroup = B7236E5221FAF4E0009A41DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7236E5021FAF4E0009A41DB /* DinoRun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7236E4F21FAF4E0009A41DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7236E6021FAF4E0009A41DB /* Main.storyboard in Resources */,
+				B7236E6221FAF4E4009A41DB /* Assets.xcassets in Resources */,
+				B7236E6521FAF4E4009A41DB /* LaunchScreen.storyboard in Resources */,
+				B7236E6D21FAF760009A41DB /* dino.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7236E4D21FAF4E0009A41DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7236E5B21FAF4E0009A41DB /* GameScene.swift in Sources */,
+				B7236E5D21FAF4E0009A41DB /* GameViewController.swift in Sources */,
+				B7236E5521FAF4E0009A41DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7236E5E21FAF4E0009A41DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7236E5F21FAF4E0009A41DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7236E6321FAF4E4009A41DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7236E6421FAF4E4009A41DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7236E6721FAF4E4009A41DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7236E6821FAF4E4009A41DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7236E6A21FAF4E4009A41DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS2423LPY5;
+				INFOPLIST_FILE = DinoRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotmail.DinoRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7236E6B21FAF4E4009A41DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS2423LPY5;
+				INFOPLIST_FILE = DinoRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotmail.DinoRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7236E4C21FAF4E0009A41DB /* Build configuration list for PBXProject "DinoRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7236E6721FAF4E4009A41DB /* Debug */,
+				B7236E6821FAF4E4009A41DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7236E6921FAF4E4009A41DB /* Build configuration list for PBXNativeTarget "DinoRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7236E6A21FAF4E4009A41DB /* Debug */,
+				B7236E6B21FAF4E4009A41DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7236E4921FAF4E0009A41DB /* Project object */;
+}
