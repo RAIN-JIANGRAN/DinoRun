@@ -21,7 +21,14 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         case over
     }
     
+    enum DinoStatus {
+        case running
+        case jumping
+        case bending
+    }
+    
     var gameStatus: GameStatus = .idle
+    var dinoStatus: DinoStatus = .running
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
@@ -64,19 +71,19 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
 //            sprite.setScale(0.8)
             // SKSpriteNode的默认锚点为(0.5,0.5)即它的中心点。
             sprite.anchorPoint = CGPoint(x: 0, y: 0)
-            sprite.position = CGPoint(x: i * sprite.size.width, y: groundPosition.y);
+            sprite.position = CGPoint(x: i * sprite.size.width, y: groundPosition.y-sprite.size.height/2);
             self.moveGround(sprite: sprite, timer: 0.02)
             self.addChild(sprite)
         }
         let ground = SKNode()
-        ground.position = groundPosition
+        ground.position = CGPoint(x: groundPosition.x, y: groundPosition.y - groundTexture.size().height/2);
         ground.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: self.frame.size.width, height: groundTexture.size().height * 1))
         ground.physicsBody?.isDynamic = false
         ground.physicsBody?.categoryBitMask = worldCategory
         self.addChild(ground)
         //sky
         
-        self.startCreateRandomTrees()
+//        self.startCreateRandomTrees()
     }
     
     //陆地及天空移动动画
@@ -96,10 +103,23 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         dinoTexture2.filteringMode = .nearest
         let anim = SKAction.animate(with: [dinoTexture1,dinoTexture2], timePerFrame: 0.2)
         dino.run(SKAction.repeatForever(anim), withKey: "run")
+        running()
+    }
+    
+    func dinoBending(){
+        let dinoTexture = SKTexture(imageNamed: "dino-03")
+        dinoTexture.filteringMode = .nearest
+        let anim = SKAction.animate(with: [dinoTexture], timePerFrame: 0.2)
+        dino.run(SKAction.repeatForever(anim),withKey:"bend")
+        bending()
     }
     ///  恐龙停止跑动动画
     func dinoStopRun()  {
         dino.removeAction(forKey: "run")
+    }
+    
+    func dinoStopBending(){
+        dino.removeAction(forKey: "bend")
     }
     
     func createTrees(){
@@ -118,7 +138,7 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         let tree = SKSpriteNode(texture: self.treeTexture)
         tree.anchorPoint = CGPoint(x: 0, y: 0)
         tree.position = CGPoint(x: self.frame.size.width+treeTexture.size().width, y: groundPosition.y)
-        tree.physicsBody = SKPhysicsBody(rectangleOf: tree.size)
+        tree.physicsBody = SKPhysicsBody(rectangleOf: treeTexture.size())
         tree.physicsBody?.isDynamic = false
         tree.physicsBody?.categoryBitMask = treeCategory
         tree.physicsBody?.contactTestBitMask = dinoCategory
@@ -146,21 +166,62 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         switch gameStatus {
         case .idle:
             runningStatus()
             break
         case .running:
             for _ in touches {
-                dino.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
-                // 施加一个均匀作用于物理体的推力
-                dino.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 25))
+                switch dinoStatus {
+                case .bending:
+                    dinoStopBending()
+                    dinoStartRun()
+                    break
+                case .running:
+                    dino.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+                    // 施加一个均匀作用于物理体的推力
+                    dino.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 25))
+                default:
+                    break
+                }
             }
             break
         case .over:
             idleStatus()
             break
         }
+        
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if(gameStatus == GameStatus.running){
+            for t in touches{
+                let position = t.location(in: self)
+                let prevPosition = t.previousLocation(in: self)
+                if(prevPosition.y > position.y + 5){
+                    if(dinoStatus == .running){
+                        dinoBending()
+                    }
+                  
+                }
+            }
+        }
+    }
+    
+    func running(){
+        dinoStatus = .running
+    }
+    
+    func jumping(){
+        dinoStatus = .jumping
+    }
+    
+    func bending(){
+        dinoStatus = .bending
     }
     
     func idleStatus() {
