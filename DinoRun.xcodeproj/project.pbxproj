@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4575C4122016F8400AB70B0 /* dino.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A4575C4022016F8400AB70B0 /* dino.atlas */; };
 		B7236E5521FAF4E0009A41DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236E5421FAF4E0009A41DB /* AppDelegate.swift */; };
 		B7236E5B21FAF4E0009A41DB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236E5A21FAF4E0009A41DB /* GameScene.swift */; };
 		B7236E5D21FAF4E0009A41DB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236E5C21FAF4E0009A41DB /* GameViewController.swift */; };
 		B7236E6021FAF4E0009A41DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7236E5E21FAF4E0009A41DB /* Main.storyboard */; };
 		B7236E6221FAF4E4009A41DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7236E6121FAF4E4009A41DB /* Assets.xcassets */; };
 		B7236E6521FAF4E4009A41DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7236E6321FAF4E4009A41DB /* LaunchScreen.storyboard */; };
-		B7236E6D21FAF760009A41DB /* dino.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B7236E6C21FAF760009A41DB /* dino.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4575C4022016F8400AB70B0 /* dino.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dino.atlas; sourceTree = "<group>"; };
 		B7236E5121FAF4E0009A41DB /* DinoRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7236E5421FAF4E0009A41DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7236E5A21FAF4E0009A41DB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		B7236E6121FAF4E4009A41DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7236E6421FAF4E4009A41DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7236E6621FAF4E4009A41DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7236E6C21FAF760009A41DB /* dino.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = dino.atlas; path = ../../../Desktop/dino.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				B7236E6121FAF4E4009A41DB /* Assets.xcassets */,
 				B7236E6321FAF4E4009A41DB /* LaunchScreen.storyboard */,
 				B7236E6621FAF4E4009A41DB /* Info.plist */,
-				B7236E6C21FAF760009A41DB /* dino.atlas */,
+				A4575C4022016F8400AB70B0 /* dino.atlas */,
 			);
 			path = DinoRun;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 				B7236E6021FAF4E0009A41DB /* Main.storyboard in Resources */,
 				B7236E6221FAF4E4009A41DB /* Assets.xcassets in Resources */,
 				B7236E6521FAF4E4009A41DB /* LaunchScreen.storyboard in Resources */,
-				B7236E6D21FAF760009A41DB /* dino.atlas in Resources */,
+				A4575C4122016F8400AB70B0 /* dino.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS2423LPY5;
 				INFOPLIST_FILE = DinoRun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS2423LPY5;
 				INFOPLIST_FILE = DinoRun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
